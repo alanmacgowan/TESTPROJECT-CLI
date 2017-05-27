@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
 import { SearchBoxDirective } from './search-box.directive';
 import { UserService } from './user.service';
+import { SalesModule } from "app/sales/sales.module";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UserService } from './user.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    SalesModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
